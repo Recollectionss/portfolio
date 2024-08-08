@@ -3,60 +3,38 @@ import './_aside.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCalendar, faEnvelope, faLocationDot, faPhone, } from "@fortawesome/free-solid-svg-icons";
 import {faGithub, } from "@fortawesome/free-brands-svg-icons";
+import ContactsItem  from "../../features/contactsItem/ContactsItem.tsx";
+import List from "../../shared/list/List.tsx";
 
 const Aside = () => {
+
+    const info = [
+        {icon: faEnvelope, title: "EMAIL", body: "HeavyObjectics@gmail.com"},
+        {icon: faPhone, title: "PHONE", body: "+38(066) 7437717"},
+        {icon: faCalendar, title: "BIRTHDAY", body: "15 August, 2005"},
+        {icon: faLocationDot, title: "LOCATION", body: "Kiev, Ukraine"},
+    ];
+
     return (
-        <aside>
-            <figure>
-                <img src="" alt="img"/>
-                <figcaption>Ilia Honcharenko</figcaption>
+        <aside className='aside'>
+            <figure className="aside__figure">
+                <img src="" alt="img" className="aside__img"/>
+                <figcaption className="aside__figcaption">Ilia Honcharenko</figcaption>
             </figure>
-            <div className="job">
+            <div className="aside__job">
                 Front-End Developer
             </div>
-            <hr/>
+            <hr className="aside__hr"/>
 
-            <div className="container__about">
-                <div className="item">
-                    <div className="icon">
-                        <FontAwesomeIcon icon={faEnvelope} size='xl' />
-                    </div>
-                    <div className="text">
-                        <strong>EMAIL</strong>
-                        <p>HeavyObjectics@gmail.com</p>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="icon">
-                        <FontAwesomeIcon icon={faPhone} size='xl'/>
-                    </div>
-                    <div className="text">
-                        <strong>PHONE</strong>
-                        <p>+38(066) 7437717</p>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="icon">
-                        <FontAwesomeIcon icon={faCalendar} size='xl'/>
-                    </div>
-                    <div className="text">
-                        <strong>BIRTHDAY</strong>
-                        <p>15 August, 2005</p>
-                    </div>
-                </div>
-                <div className="item">
-                    <div className="icon">
-                        <FontAwesomeIcon icon={faLocationDot} size='xl' />
-                    </div>
-                    <div className="text">
-                        <strong>LOCATION</strong>
-                        <p>Kiev, Ukraine</p>
-                    </div>
-                </div>
-            </div>
+            <List>
+                {
+                    info.map(element =>
+                    <ContactsItem key={element.title} icon={element.icon} title={element.title} body={element.body}/>)
+                }
+            </List>
 
-            <div className="social__media">
-                <a href="https://github.com/Observersss">
+            <div className="aside__social__media">
+                <a href="https://github.com/Observersss" className="aside__social__media__link">
                     <FontAwesomeIcon icon={faGithub}  size="xl"/>
                 </a>
             </div>

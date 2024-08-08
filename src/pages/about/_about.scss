@@ -1,0 +1,18 @@
+@import "../../app/styles/global";
+
+.main-container{
+  padding: 25px;
+  border-radius: 16px;
+  width: 900px;
+  height: auto;
+  background-color: var(--color--gray);
+  color: var(--color--white);
+  overflow: hidden;
+
+  &__divider{
+    margin: 15px 0;
+    width: 50px;
+    border-radius: 16px;
+    border: 3px solid var(--color--orange);
+  }
+}

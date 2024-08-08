@@ -1,7 +1,8 @@
 @import "../../app/styles/global";
 
-aside{
-  padding: 20px;
+.aside {
+  width: 300px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,28 +10,30 @@ aside{
   background-color: var(--color--gray);
   border-radius: 16px;
 
-  figure{
+  &__figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    img{
-      width: 198px;
-      height: 200px;
-      border-radius: 16px;
-      margin: 2em;
-    }
-
-    figcaption{
-      color: var(--color--white);
-      font-size: 1.5em;
-      font-weight: bold;
-      margin: 10px;
-    }
   }
 
-  .job{
+  &__img {
+    width: 198px;
+    height: 200px;
+    border-radius: 16px;
+    margin: 2em;
+    background-color: var(--color--lightgray);
+  }
+
+  &__figcaption {
+    color: var(--color--white);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+
+  &__job {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,56 +47,22 @@ aside{
     font-weight: bold;
   }
 
-  hr{
+  &__hr {
     margin-top: 1em;
     margin-bottom: 1em;
     width: 100%;
   }
 
-  .container__about{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    .item{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 1em;
-
-      .icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0.8em;
-        padding:18px 0;
-        color: var(--color--orange);
-        border-radius: 16px;
-        width: 60px;
-        box-shadow: -0.5px -0.3px 1px rgba(255, 255, 255, 0.8);
-      }
-
-      .text{
-        display: flex;
-        flex-direction: column;
-        strong{
-          color: var(--color--lightgray);
-          padding-bottom: 5px;
-        }
-        p{
-          color: var(--color--white);
-        }
-      }
-    }
-  }
-
-  .social__media{
+  &__social__media {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    a{
+    &__link {
       text-decoration: none;
       color: var(--color--white);
     }
+
   }
 }
+
