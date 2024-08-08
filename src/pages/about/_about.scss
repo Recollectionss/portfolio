@@ -1,13 +1,6 @@
-@import "../../app/styles/global";
+@import "../../app/styles/pages-basic";
 
 .main-container{
-  padding: 25px;
-  border-radius: 16px;
-  width: 900px;
-  height: auto;
-  background-color: var(--color--gray);
-  color: var(--color--white);
-  overflow: hidden;
 
   &__divider{
     margin: 15px 0;
