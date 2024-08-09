@@ -7,6 +7,7 @@ import ContactsItem  from "../../features/contactsItem/ContactsItem.tsx";
 import List from "../../shared/list/List.tsx";
 
 const Aside = () => {
+    // TODO: need add to project My image and use for img
 
     const info = [
         {icon: faEnvelope, title: "EMAIL", body: "HeavyObjectics@gmail.com"},
@@ -37,6 +38,7 @@ const Aside = () => {
                 <a href="https://github.com/Observersss" className="aside__social__media__link">
                     <FontAwesomeIcon icon={faGithub}  size="xl"/>
                 </a>
+            {/*    TODO: need add links : LinkedIn, X,telegram*/}
             </div>
         </aside>
     )
