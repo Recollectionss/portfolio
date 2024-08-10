@@ -1,0 +1,10 @@
+@import "src/app/styles/global";
+
+.link {
+  margin:0 0.5em;
+  color: var(--color--white);
+
+  a{
+    text-decoration: none;
+  }
+}

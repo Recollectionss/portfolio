@@ -1,22 +1,31 @@
 import React from 'react';
 import './_aside.scss'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCalendar, faEnvelope, faLocationDot, faPhone, } from "@fortawesome/free-solid-svg-icons";
-import {faGithub, } from "@fortawesome/free-brands-svg-icons";
-import ContactsItem  from "../../features/contactsItem/ContactsItem.tsx";
-import List from "../../shared/list/List.tsx";
+import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import {faXTwitter} from "@fortawesome/free-brands-svg-icons/faXTwitter";
 import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
-
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
+import {faCalendar} from "@fortawesome/free-solid-svg-icons/faCalendar";
+import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
+import ContactsItem  from "../../features/contactsItem/ContactsItem.tsx";
+import SocialLink from "../../shared/link/SocialLink.tsx";
+import {ContactInfo, ContactLink} from "../../shared/types/contact.ts";
+import List from "../../shared/list/List.tsx";
 const Aside = () => {
     // TODO: need add to project My image and use for img
-
-    const info = [
+    const info: ContactInfo[] = [
         {icon: faEnvelope, title: "EMAIL", body: "HeavyObjectics@gmail.com"},
         {icon: faPhone, title: "PHONE", body: "+38(066) 7437717"},
         {icon: faCalendar, title: "BIRTHDAY", body: "15 August, 2005"},
         {icon: faLocationDot, title: "LOCATION", body: "Kiev, Ukraine"},
+    ];
+
+    const links:ContactLink[] = [
+        {href: "https://github.com", icon: faGithub},
+        {href: "https://www.linkedin.com/in/illia-honcharenko-16477826b/", icon: faLinkedin},
+        {href: "https://x.com/Touch78216070", icon: faXTwitter},
+        {href: "https://t.me/dream_bury_me", icon: faTelegram}
     ];
 
     return (
@@ -30,28 +39,18 @@ const Aside = () => {
             </div>
             <hr className="aside__hr"/>
 
-            <List>
+            <List vertical={true}>
                 {
                     info.map(element =>
                     <ContactsItem key={element.title} icon={element.icon} title={element.title} body={element.body}/>)
                 }
             </List>
 
-            <div className="aside__social__media">
-                <a href="https://github.com/Observersss" className="aside__social__media__link">
-                    <FontAwesomeIcon icon={faGithub} size="xl"/>
-                </a>
-                <a href="https://www.linkedin.com/in/illia-honcharenko-16477826b/"
-                   className="aside__social__media__link">
-                    <FontAwesomeIcon icon={faLinkedin} size="xl"/>
-                </a>
-                <a href="https://x.com/Touch78216070" className="aside__social__media__link">
-                    <FontAwesomeIcon icon={faXTwitter} size="xl"/>
-                </a>
-                <a href="https://t.me/dream_bury_me" className="aside__social__media__link">
-                    <FontAwesomeIcon icon={faTelegram} size="xl"/>
-                </a>
-            </div>
+            <List>
+                {links.map(link =>
+                    <SocialLink key={link.href} href={link.href} icon={link.icon} />
+                )}
+            </List>
         </aside>
     )
         ;
