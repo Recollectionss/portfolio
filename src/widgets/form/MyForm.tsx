@@ -1,4 +1,4 @@
-import React, {FormEvent, FormEventHandler} from 'react';
+import React, {FormEvent} from 'react';
 import classes from './_myForm.module.scss'
 import MyInput from "../UI/input/MyInput.tsx";
 import MyTextArea from "../UI/textArea/MyTextArea.tsx";
@@ -12,11 +12,11 @@ const MyForm = () => {
 
     return (
         <form onSubmit={handleSubmit} className={classes.form}>
-            <div className="form-contactInfo">
-                <MyInput/>
-                <MyInput/>
+            <div className={classes.formContactInfo}>
+                <MyInput text={"Full name..."}/>
+                <MyInput text={"Email..."}/>
             </div>
-            <MyTextArea/>
+            <MyTextArea text={"Message..."} rows={30} />
             <MyButton/>
         </form>
     );

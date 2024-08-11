@@ -16,7 +16,7 @@ const Aside = () => {
     // TODO: need add to project My image and use for img
     const info: ContactInfo[] = [
         {icon: faEnvelope, title: "EMAIL", body: "HeavyObjectics@gmail.com"},
-        {icon: faPhone, title: "PHONE", body: "+38(066) 7437717"},
+        {icon: faPhone, title: "PHONE", body: "+38(066) 743 77 r17"},
         {icon: faCalendar, title: "BIRTHDAY", body: "15 August, 2005"},
         {icon: faLocationDot, title: "LOCATION", body: "Kiev, Ukraine"},
     ];

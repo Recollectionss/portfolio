@@ -1,12 +1,33 @@
 @import "src/app/styles/global";
 
-.input{
-  font-size: 1.3em;
-  height: 2.1em;
-  padding: 0.5em;
+.divInput {
+  position: relative;
   margin: 1em;
-  background-color: var(--color--lightgray);
-  color: var(--color--white);
-  border: 3px solid var(--color--gray);
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    font-size: 1.3em;
+    height: 2.1em;
+    padding: 0.5em;
+    background-color: var(--color--lightgray);
+    color: var(--color--white);
+    border: 1px solid var(--color--gray);
+    border-radius: 16px;
+  }
+
+  &__label {
+    position: relative;
+    left: 10px;
+    top: -1.9rem;
+    font-size: 1em;
+    color: var(--color--white);
+    pointer-events: none;
+    transition: all 1s ease;
+  }
+
+  &__input:focus + &__label{
+    top:-4rem;
+    color: var(--color--orange);
+  }
 }

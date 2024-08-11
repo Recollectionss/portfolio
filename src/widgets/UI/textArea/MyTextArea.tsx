@@ -1,11 +1,23 @@
-import React from 'react';
+import React, {FC, useState} from 'react';
 import classes from './_myTextArea.module.scss'
-const MyTextArea = () => {
+interface MyTextAreaProps extends Omit<React.InputHTMLAttributes<HTMLTextAreaElement>, 'placeholder'>{
+    text:string;
+}
+
+const MyTextArea: FC<MyTextAreaProps> = ({props,text}) => {
+    const [isFocused, setIsFocused] = useState<boolean>(false);
     // TODO: need add ...props
     return (
-        <textarea className={classes.textArea}>
+        <div className={classes.divTextArea}>
+            <label className={`${classes.divTextArea__label} ${isFocused ? classes.focused : ''}`}>{text}</label>
+            <textarea
+                className={classes.divTextArea__textArea} {...props}
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
+            >
 
-        </textarea>
+            </textarea>
+        </div>
     );
 };
 
