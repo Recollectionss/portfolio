@@ -17,7 +17,7 @@ const MyForm = () => {
                 <MyInput text={"Email..."}/>
             </div>
             <MyTextArea text={"Message..."} rows={30} />
-            <MyButton/>
+            <MyButton> Submit </MyButton>
         </form>
     );
 };
