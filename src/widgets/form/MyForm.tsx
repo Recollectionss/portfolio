@@ -1,4 +1,4 @@
-import React, {FormEvent} from 'react';
+import {FormEvent} from 'react';
 import classes from './_myForm.module.scss'
 import MyInput from "../UI/input/MyInput.tsx";
 import MyTextArea from "../UI/textArea/MyTextArea.tsx";

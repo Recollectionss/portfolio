@@ -1,4 +1,3 @@
-import React from 'react';
 import './_aside.scss'
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";

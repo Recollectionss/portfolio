@@ -1,4 +1,3 @@
-import React from 'react';
 import './_about.scss'
 import Navbar from "../../shared/navbar/Navbar.tsx";
 const About = () => {

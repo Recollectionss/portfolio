@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {IconDefinition} from "@fortawesome/free-brands-svg-icons";
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 import './_contactsItem.scss'

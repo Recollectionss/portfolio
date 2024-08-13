@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from "../shared/navbar/Navbar.tsx";
 import '../app/styles/_pages-basic.scss'
 import Icon from "../shared/icon/Icon.tsx";

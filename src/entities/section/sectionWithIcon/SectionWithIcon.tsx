@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import './_sectionWithIcon.scss'
 import Icon from "../../../shared/icon/Icon.tsx";
 import {IconDefinition} from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +11,7 @@ export interface SectionItem{
 interface SectionWithIconProps{
     icon: IconDefinition;
     sectionTitle:string;
-    items:[SectionItem:object];
+    items:SectionItem[];
 }
 const SectionWithIcon : FC<SectionWithIconProps> = ({icon,sectionTitle,items =[]}) => {
     return (

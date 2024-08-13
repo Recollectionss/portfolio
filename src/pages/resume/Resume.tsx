@@ -1,4 +1,3 @@
-import React from 'react';
 import './_resume.scss'
 import Navbar from "../../shared/navbar/Navbar.tsx";
 import {faBookOpen} from "@fortawesome/free-solid-svg-icons/faBookOpen";

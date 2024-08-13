@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import {FC, useState} from 'react';
 import classes from './_myTextArea.module.scss'
 interface MyTextAreaProps extends Omit<React.InputHTMLAttributes<HTMLTextAreaElement>, 'placeholder'>{
     text:string;

@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import './_list.scss'
 interface ListProps  {
     children:React.FunctionComponent | React.ReactNode;

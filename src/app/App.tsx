@@ -1,4 +1,3 @@
-import React from 'react';
 import './styles/_app.scss'
 import Aside from "../widgets/aside/Aside.tsx";
 import {BrowserRouter} from "react-router-dom";

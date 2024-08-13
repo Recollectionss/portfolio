@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from "../../shared/navbar/Navbar.tsx";
 import './_contact.scss'
 import MyForm from "../../widgets/form/MyForm.tsx";
