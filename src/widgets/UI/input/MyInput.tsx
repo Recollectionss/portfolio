@@ -6,7 +6,6 @@ interface MyInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>,
 }
 
 const MyInput: FC<MyInputProps> = ({props,text}) => {
-    // TODO: need add ...props
     return (
         <div className={classes.divInput}>
             <input {...props} className={classes.divInput__input}>

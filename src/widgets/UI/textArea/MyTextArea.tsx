@@ -6,7 +6,6 @@ interface MyTextAreaProps extends Omit<React.InputHTMLAttributes<HTMLTextAreaEle
 
 const MyTextArea: FC<MyTextAreaProps> = ({props,text}) => {
     const [isFocused, setIsFocused] = useState<boolean>(false);
-    // TODO: need add ...props
     return (
         <div className={classes.divTextArea}>
             <label className={`${classes.divTextArea__label} ${isFocused ? classes.focused : ''}`}>{text}</label>

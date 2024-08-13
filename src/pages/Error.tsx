@@ -6,7 +6,6 @@ import {faBug} from "@fortawesome/free-solid-svg-icons/faBug";
 const Error = () => {
     return (
         <div className={"main-container"}>
-        {/* TODO: write info about not found page for this path   */}
             <Navbar/>
             <div className={"main-container__div-error"}>
                 <Icon icon={faBug} size={'2xl'}/>

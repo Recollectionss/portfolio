@@ -4,8 +4,6 @@ import MyInput from "../UI/input/MyInput.tsx";
 import MyTextArea from "../UI/textArea/MyTextArea.tsx";
 import MyButton from "../UI/button/MyButton.tsx";
 const MyForm = () => {
-    // TODO: need create use State and use for input and text
-
     const handleSubmit = (event : FormEvent<HTMLFormElement>) => {
         event.preventDefault();
     }

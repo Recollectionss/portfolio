@@ -8,7 +8,6 @@ interface MyButtonProps {
 }
 
 const MyButton: FC<MyButtonProps> = ({children, onClick,disabled}) => {
-    // TODO: need add ...props
     return (
         <button className={classes.myButton} onClick={onClick} disabled={disabled}>
             {children}
