@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import classes from './_myButton.module.scss'
 
 interface MyButtonProps {
-    children: React.ReactNode | React.ReactHTMLElement<string>;
+    children: React.ReactNode | React.ReactElement;
     onClick?: () => void;
     disabled?: boolean;
 }

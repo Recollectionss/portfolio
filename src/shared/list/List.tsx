@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import './_list.scss'
 interface ListProps  {
-    children: React.FunctionComponent | React.ReactNode;
+    children: React.ReactElement | React.ReactNode;
     vertical?:boolean;
 }
 
