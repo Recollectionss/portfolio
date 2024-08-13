@@ -1,14 +1,16 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import classes from './_myInput.module.scss'
 
-interface MyInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'placeholder'>{
+interface MyInputProps{
     text:string;
+    value?:string;
+    setValue?:() => void;
 }
 
-const MyInput: FC<MyInputProps> = ({props,text}) => {
+const MyInput: FC<MyInputProps> = ({text,value,setValue}) => {
     return (
         <div className={classes.divInput}>
-            <input {...props} className={classes.divInput__input}>
+            <input value={value} onClick={setValue} className={classes.divInput__input}>
 
             </input>
             <label className={classes.divInput__label}>{text}</label>
