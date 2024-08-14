@@ -1,0 +1,6 @@
+@import "src/app/styles/global";
+
+.websiteList{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
