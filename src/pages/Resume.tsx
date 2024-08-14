@@ -1,8 +1,9 @@
-import './_resume.scss'
-import Navbar from "../../shared/navbar/Navbar.tsx";
+import '../app/styles/_pages-basic.scss'
+import Navbar from "../shared/navbar/Navbar.tsx";
 import {faBookOpen} from "@fortawesome/free-solid-svg-icons/faBookOpen";
 import {faCode} from "@fortawesome/free-solid-svg-icons/faCode";
-import SectionWithIcon, {SectionItem} from "../../entities/section/sectionWithIcon/SectionWithIcon.tsx";
+import SectionWithIcon, {SectionItem} from "../entities/section/sectionWithIcon/SectionWithIcon.tsx";
+import TitlePage from "../shared/titlePage/TitlePage.tsx";
 const Resume = () => {
     const itemsEducation:SectionItem[] = [
         {title: "Tarasa Shevchenko National University of Kyiv", dates: "2022 - Present", info: "121 specialization - Software Engineer"},
@@ -22,8 +23,7 @@ const Resume = () => {
     return (
         <div className="main-container">
             <Navbar/>
-            <h1 className="main-container__title">Resume</h1>
-            <div className="main-container__divider"></div>
+            <TitlePage title={"Resume"}/>
 
             <SectionWithIcon icon={faBookOpen} sectionTitle={"Education"} items={itemsEducation}/>
             <SectionWithIcon icon={faBookOpen} sectionTitle={"Experience"} items={itemsExperience}/>
