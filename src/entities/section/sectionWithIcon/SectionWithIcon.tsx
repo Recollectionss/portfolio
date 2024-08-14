@@ -2,6 +2,7 @@ import {FC} from 'react';
 import './_sectionWithIcon.scss'
 import Icon from "../../../shared/icon/Icon.tsx";
 import {IconDefinition} from "@fortawesome/free-brands-svg-icons";
+import SectionContentItem from "../sectionContentItem/SectionContentItem.tsx";
 
 export interface SectionItem{
     title:string;
@@ -24,17 +25,20 @@ const SectionWithIcon : FC<SectionWithIconProps> = ({icon,sectionTitle,items =[]
                 <h2 className="section__content-title">{sectionTitle}</h2>
                 <div className="section__content-items">
                     {/*TODO: change, create new component*/}
+                    {/*{items.map(item =>*/}
+                    {/*    <div className="section__content-item" key={item.dates}>*/}
+                    {/*        <div className="section__content-item-point-text">*/}
+                    {/*            <div className="section__content-item-point"></div>*/}
+                    {/*            <div className="section__content-item-text">*/}
+                    {/*                <h3>{item.title}</h3>*/}
+                    {/*                {item.dates && <span>{item.dates}</span>}*/}
+                    {/*                {item.info && <p>{item.info}</p>}*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*)}*/}
                     {items.map(item =>
-                        <div className="section__content-item" key={item.dates}>
-                            <div className="section__content-item-point-text">
-                                <div className="section__content-item-point"></div>
-                                <div className="section__content-item-text">
-                                    <h3>{item.title}</h3>
-                                    {item.dates && <span>{item.dates}</span>}
-                                    {item.info && <p>{item.info}</p>}
-                                </div>
-                            </div>
-                        </div>
+                        <SectionContentItem key={item.title} title={item.title} info={item.info} date={item.dates}/>
                     )}
                 </div>
             </div>
