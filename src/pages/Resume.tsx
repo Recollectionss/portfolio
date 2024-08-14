@@ -6,7 +6,7 @@ import SectionWithIcon, {SectionItem} from "../entities/section/sectionWithIcon/
 import TitlePage from "../shared/titlePage/TitlePage.tsx";
 const Resume = () => {
     const itemsEducation:SectionItem[] = [
-        {title: "Tarasa Shevchenko National University of Kyiv", dates: "2022 - Present", info: "121 specialization - Software Engineer"},
+        {title: "Taras Shevchenko National University of Kyiv", dates: "2022 - Present", info: "121 specialization - Software Engineer"},
     ];
     const itemsExperience:SectionItem[] = [
         {title: "Didn't have..."},
@@ -24,7 +24,6 @@ const Resume = () => {
         <div className="main-container">
             <Navbar/>
             <TitlePage title={"Resume"}/>
-
             <SectionWithIcon icon={faBookOpen} sectionTitle={"Education"} items={itemsEducation}/>
             <SectionWithIcon icon={faBookOpen} sectionTitle={"Experience"} items={itemsExperience}/>
             <SectionWithIcon icon={faCode} sectionTitle={"Stack"} items={itemsStack}/>
