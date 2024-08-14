@@ -5,7 +5,13 @@ interface SectionContentItemProps {
     date?:string;
     info?:string;
 }
-const SectionContentItem : FC<SectionContentItemProps> = ({title,date,info}) => {
+const SectionContentItem : FC<SectionContentItemProps> = ({
+    title,
+    date,
+    info,
+}) => {
+
+
     return (
         <div className={classes.contentItem}>
             <div className={classes.contentItemPointText}>
