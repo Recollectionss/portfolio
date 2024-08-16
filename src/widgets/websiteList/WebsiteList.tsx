@@ -4,14 +4,14 @@ import NetflixClone from '../../../public/NetflixClone.png'
 const WebsiteList = () => {
 
     const websites = [
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        {img:NetflixClone,href:"https://github.com/Observersss/Netflix-clone",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
     ];
 
     return (
