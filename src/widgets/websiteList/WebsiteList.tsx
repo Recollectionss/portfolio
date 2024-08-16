@@ -4,13 +4,9 @@ const WebsiteList = () => {
 
     const websites = [
         {img:'',href:"https://github.com/Observersss/Netflix-clone",title:"Netflix clone", alt: "Clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
-        // {img:NetflixClone,href:"https://observersss.github.io/Netflix-clone/",title:"Netflix clone"},
+        {img:'',href:"",title:`Post (use JSONPLACEHOLDER)`, alt: "Website post"},
+        {img:'',href:"",title:"To-Do list", alt: "Website todos"},
+
     ];
 
     return (
