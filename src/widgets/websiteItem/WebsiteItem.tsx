@@ -5,6 +5,7 @@ export interface WebsiteItemProps {
     img: string;
     title:string;
     href:string;
+    alt?:string;
 }
 
 const WebsiteItem: FC<WebsiteItemProps> = ({img,title,href}) => {
