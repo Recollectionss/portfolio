@@ -13,8 +13,8 @@ const Resume = () => {
     ];
     const itemsStack:SectionItem[] = [
         {title: "HTML"},
-        {title: "CSS(SCSS/SASS,Bootstrap)"},
-        {title: "JavaScript/TypeScript"},
+        {title: "CSS (SCSS, SASS, Bootstrap) "},
+        {title: "JavaScript / TypeScript"},
         {title: "React"},
         {title: "Redux"},
         {title: "git"},

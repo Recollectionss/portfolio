@@ -6,10 +6,13 @@
   margin: 1em;
   border: 1px solid var(--color--gray);
   border-top: none;
-  //background-color: var(--color--lightgray);
   border-radius: 16px;
   padding: -1em 1em 0 1em;
   transition: border 0.5s;
+  @media (max-width: 1080px) {
+    width: 225px;
+    height: 100px;
+  }
 
   &__a{
     width: 100%;
@@ -20,8 +23,8 @@
     align-items: center;
   }
   &__img{
-    width: 390px;
-    height: 220px;
+    width: 100%;
+    height: 80%;
     border-radius: 16px;
     color: var(--color--white);
     font-size: 2.1em;
@@ -33,6 +36,9 @@
     font-size: 1.3em;
     margin:0.5em 0 ;
     transition: color 0.5s;
+    @media (max-width: 1080px) {
+      font-size: 0.8em;
+    }
   }
 
   &:hover{

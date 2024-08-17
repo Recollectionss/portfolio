@@ -1,0 +1,15 @@
+@import "src/app/styles/global";
+
+.container{
+  padding:1em 0;
+  margin:1em 0;
+  font-size: 1.2em;
+
+  &__title{
+    color: var(--color--orange);
+    margin: 1em 0;
+  }
+  &__text{
+
+  }
+}

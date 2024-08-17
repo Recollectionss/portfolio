@@ -6,7 +6,6 @@ import WebsiteList from "../widgets/websiteList/WebsiteList.tsx";
 const Portfolio = () => {
     return (
         <div className={"main-container"}>
-            {/*TODO: need hosting my other websites by grid*/}
             <Navbar/>
             <TitlePage title={"Portfolio"}/>
             <WebsiteList/>
