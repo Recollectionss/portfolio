@@ -3,7 +3,7 @@ import {pages} from "../../app/router";
 
 const AppRouter = () => {
     return (
-        <Routes basename={"/portfolio"}>
+        <Routes >
             {pages.map(page => <Route key={page.path} path={page.path} element={page.element} />)}
         </Routes>
     );
