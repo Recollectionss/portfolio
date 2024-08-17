@@ -2,6 +2,7 @@
 
 .contentItem {
   position: relative;
+  width: 100%;
 
   &PointText {
     margin: 10px 0;
@@ -12,18 +13,22 @@
     .contentItemPoint {
       margin-left: -35px;
       margin-right: 47px;
-      width: 10px;
-      height: 10px;
+      min-width: 10px;
+      min-height: 10px;
       border-radius: 20px;
       background-color: var(--color--orange);
       box-shadow: 0 0 0 4px var(--color--palewhite);
       z-index: 1;
+
     }
 
 
     .contentItemText {
       &__h3 {
         margin-bottom: 5px;
+        @media (max-width: 1080px) {
+          width: 70%;
+        }
       }
 
       &__span {

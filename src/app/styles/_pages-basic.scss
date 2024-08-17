@@ -7,4 +7,8 @@
   background-color: var(--color--gray);
   color: var(--color--white);
   overflow: hidden;
+
+  @media (max-width: 1080px) {
+    width: 300px;
+  }
 }

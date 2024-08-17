@@ -5,7 +5,10 @@
   padding: 0.3em 1em 0 1em;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 425px;
+  @media (max-width: 1080px) {
+    width: 250px;
+  }
 
   &__input {
     font-size: 1.3em;
@@ -15,8 +18,8 @@
     color: var(--color--white);
     border: 1px solid var(--color--gray);
     border-radius: 16px;
-    width: auto;
-    min-width: 395px;
+    width: 100%;
+    min-width: 150px;
     max-width: 500px;
   }
 

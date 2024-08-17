@@ -4,4 +4,8 @@
   display: flex;
   justify-content: center;
   gap: 1em;
+  
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
 }
