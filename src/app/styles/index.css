@@ -18,7 +18,7 @@ body {
   margin: 4em;
   background-color: var(--color--black);
 }
-@media (max-width: 1080px) {
+@media (max-width: 480px) {
   body {
     margin: 1em;
   }

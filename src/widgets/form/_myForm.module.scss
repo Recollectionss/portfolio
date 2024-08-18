@@ -11,7 +11,7 @@
   &ContactInfo{
     display: flex;
     justify-content: space-between;
-    @media (max-width: 1080px) {
+    @media (max-width: 480px) {
       flex-direction: column;
     }
   }
