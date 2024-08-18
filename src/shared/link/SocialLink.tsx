@@ -10,7 +10,7 @@ interface LinkProps {
 
 const SocialLink: FC<LinkProps> = ({href,icon}) => {
     return (
-        <a href={href} className="link">
+        <a href={href} className="link" target="_blank">
             <FontAwesomeIcon icon={icon} size="xl"/>
         </a>
     );
