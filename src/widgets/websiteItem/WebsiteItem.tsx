@@ -11,7 +11,7 @@ export interface WebsiteItemProps {
 const WebsiteItem: FC<WebsiteItemProps> = ({img,title,href,alt}) => {
     return (
         <figure className={classes.item}>
-            <a href={href} className={classes.item__a}>
+            <a href={href} className={classes.item__a} target={"_blank"}>
                 <img src={img} alt={alt} className={classes.item__img}/>
                 <figcaption className={classes.item__figcaption}>{title}</figcaption>
             </a>
