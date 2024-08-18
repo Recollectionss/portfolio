@@ -6,7 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/portfolio/",
   server: {
-    // Это может помочь в отладке
     open: true,
     host: '0.0.0.0',
   }
