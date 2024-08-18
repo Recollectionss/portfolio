@@ -11,8 +11,8 @@ import ContactsItem  from "../../features/contactsItem/ContactsItem.tsx";
 import SocialLink from "../../shared/link/SocialLink.tsx";
 import {ContactInfo, ContactLink} from "../../shared/types/contact.ts";
 import List from "../../shared/list/List.tsx";
+import Me from '/Me.png'
 const Aside = () => {
-    // TODO: need add to project My image and use for img
     const info: ContactInfo[] = [
         {icon: faEnvelope, title: "EMAIL", body: "HeavyObjectics@gmail.com"},
         {icon: faPhone, title: "PHONE", body: "+38(066) 743 77 17"},
@@ -22,7 +22,7 @@ const Aside = () => {
 
     const links:ContactLink[] = [
         {href: "https://github.com", icon: faGithub},
-        {href: "https://www.linkedin.com/in/illia-honcharenko-16477826b/", icon: faLinkedin},
+        {href: "www.linkedin.com/in/illia-honcharenko-16477826b", icon: faLinkedin},
         {href: "https://x.com/Touch78216070", icon: faXTwitter},
         {href: "https://t.me/dream_bury_me", icon: faTelegram}
     ];
@@ -30,7 +30,7 @@ const Aside = () => {
     return (
         <aside className='aside'>
             <figure className="aside__figure">
-                <img src="" alt="img" className="aside__img"/>
+                <img src={Me} alt="img" className="aside__img"/>
                 <figcaption className="aside__figcaption">Ilia Honcharenko</figcaption>
             </figure>
             <div className="aside__job">
