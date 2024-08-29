@@ -14,7 +14,7 @@ import List from "../../shared/list/List.tsx";
 import Me from '/Me.png'
 const Aside = () => {
     const info: ContactInfo[] = [
-        {icon: faEnvelope, title: "EMAIL", body: "HeavyObjectics@gmail.com"},
+        {icon: faEnvelope, title: "EMAIL", body: "illiahoncharenkoo@gmail.com"},
         {icon: faPhone, title: "PHONE", body: "+38(066) 743 77 17"},
         {icon: faCalendar, title: "BIRTHDAY", body: "15 August, 2005"},
         {icon: faLocationDot, title: "LOCATION", body: "Kiev, Ukraine"},
