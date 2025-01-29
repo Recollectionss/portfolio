@@ -5,7 +5,7 @@ import {faXTwitter} from "@fortawesome/free-brands-svg-icons/faXTwitter";
 import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
-import {faCalendar} from "@fortawesome/free-solid-svg-icons/faCalendar";
+// import {faCalendar} from "@fortawesome/free-solid-svg-icons/faCalendar";
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
 import ContactsItem  from "../../features/contactsItem/ContactsItem.tsx";
 import SocialLink from "../../shared/link/SocialLink.tsx";
@@ -16,8 +16,8 @@ const Aside = () => {
     const info: ContactInfo[] = [
         {icon: faEnvelope, title: "EMAIL", body: "illiahoncharenkoo@gmail.com"},
         {icon: faPhone, title: "PHONE", body: "+38(066) 743 77 17"},
-        {icon: faCalendar, title: "BIRTHDAY", body: "15 August, 2005"},
-        {icon: faLocationDot, title: "LOCATION", body: "Kiev, Ukraine"},
+        // {icon: faCalendar, title: "BIRTHDAY", body: "15 August, 2005"},
+        {icon: faLocationDot, title: "LOCATION", body: "Kyiv, Ukraine"},
     ];
 
     const links:ContactLink[] = [
@@ -34,7 +34,7 @@ const Aside = () => {
                 <figcaption className="aside__figcaption">Ilia Honcharenko</figcaption>
             </figure>
             <div className="aside__job">
-                Front-End Developer
+                Back-End Developer
             </div>
             <hr className="aside__hr"/>
 
