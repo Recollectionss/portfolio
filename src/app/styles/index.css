@@ -18,10 +18,5 @@ body {
   margin: 4em;
   background-color: var(--color--black);
 }
-@media (max-width: 480px) {
-  body {
-    margin: 1em;
-  }
-}
 
 /*# sourceMappingURL=index.css.map */

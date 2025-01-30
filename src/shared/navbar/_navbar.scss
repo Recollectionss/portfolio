@@ -23,6 +23,7 @@
     opacity: 0.9;
 
     @media (max-width: 480px) {
+      position: sticky;
      flex-direction: column;
       width: 100%;
       margin-right: 0;

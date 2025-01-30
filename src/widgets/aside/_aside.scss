@@ -55,10 +55,17 @@
     margin-bottom: 1em;
     width: 100%;
   }
+  @media (min-width: 0) and (max-width: 479px) {
+    position: unset;
+    width: 50vh;
+    &__img{
+      width: 70%;
+    }
+  }
 
   @media (min-width: 480px) and (max-width: 1024px) {
     position: unset;
-    width: 450px;
+    width: 123vh;
     &__img{
       width: 60%;
     }
